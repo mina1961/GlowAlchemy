@@ -5,3 +5,4 @@ JS Back-End workshop
  1. Initial project architecture
  2. Setup Express
  3. Setup handlebars
+ 4. Add resources
