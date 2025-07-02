@@ -10,8 +10,10 @@ app.engine('hbs', handlebars.engine({
 app.set('view engine', 'hbs');
 app.set('views', './src/views');
 
+app.use(express.static('./src/styles')); // serve static files from the 'styles' directory
+
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('home')
 })
 
 app.listen(5000, () => console.log('Server is running on http://localhost:5000'));
